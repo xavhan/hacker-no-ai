@@ -1,0 +1,19 @@
+<!doctype html>
+<meta charset="utf-8">
+<style>
+  body { font: 13px Verdana, sans-serif; width: 300px; padding: 10px; }
+  h1 { font-size: 14px; margin: 0 0 8px; color: #ff6600; }
+  label { display: block; margin: 8px 0 4px; }
+  textarea { width: 100%; height: 120px; font: 11px monospace; }
+  input[type=range] { width: 100%; }
+</style>
+<h1>Hacker No AI</h1>
+<label><input type="radio" name="mode" value="dim"> Dim AI stories</label>
+<label><input type="radio" name="mode" value="hide"> Hide AI stories</label>
+<label>Dim amount: <span id="pct"></span></label>
+<input type="range" id="opacity" min="0" max="0.9" step="0.05">
+<label>Keywords (comma separated)</label>
+<textarea id="keywords"></textarea>
+<button id="reset">Reset keywords</button>
+<script src="content.js"></script>
+<script src="popup.js"></script>
